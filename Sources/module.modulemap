@@ -1,0 +1,6 @@
+framework module Logix {
+    umbrella header "Logix.h"
+    
+    export *
+    module * { export * }
+}
