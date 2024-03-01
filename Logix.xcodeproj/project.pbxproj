@@ -20,6 +20,10 @@
 		320CC2A82B912EE6009F8735 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2A42B912EE6009F8735 /* DataFetcher.swift */; };
 		320CC2A92B912FAC009F8735 /* Logix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Logix.framework */; };
 		320CC2AA2B912FAC009F8735 /* Logix.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Logix.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		320CC2B52B91A50A009F8735 /* LogixProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2B42B91A50A009F8735 /* LogixProApp.swift */; };
+		320CC2B72B91A50A009F8735 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2B62B91A50A009F8735 /* ContentView.swift */; };
+		320CC2B92B91A50B009F8735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2B82B91A50B009F8735 /* Assets.xcassets */; };
+		320CC2BC2B91A50B009F8735 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2BB2B91A50B009F8735 /* Preview Assets.xcassets */; };
 		327C506C28E818BD00BEBBDD /* AnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C506B28E818BD00BEBBDD /* AnalyticsModel.swift */; };
 		327C506F28E8253E00BEBBDD /* AnaliticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C506D28E8253E00BEBBDD /* AnaliticsCell.swift */; };
 		327C507028E8253E00BEBBDD /* AnaliticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C506E28E8253E00BEBBDD /* AnaliticsCell.xib */; };
@@ -109,6 +113,12 @@
 		320CC2A22B912EE6009F8735 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		320CC2A32B912EE6009F8735 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		320CC2A42B912EE6009F8735 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		320CC2B22B91A50A009F8735 /* LogixPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogixPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		320CC2B42B91A50A009F8735 /* LogixProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixProApp.swift; sourceTree = "<group>"; };
+		320CC2B62B91A50A009F8735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		320CC2B82B91A50B009F8735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		320CC2BB2B91A50B009F8735 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		320CC2BD2B91A50B009F8735 /* LogixPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogixPro.entitlements; sourceTree = "<group>"; };
 		327C506B28E818BD00BEBBDD /* AnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModel.swift; sourceTree = "<group>"; };
 		327C506D28E8253E00BEBBDD /* AnaliticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticsCell.swift; sourceTree = "<group>"; };
 		327C506E28E8253E00BEBBDD /* AnaliticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaliticsCell.xib; sourceTree = "<group>"; };
@@ -172,6 +182,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		320CC2AF2B91A50A009F8735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D9781BEFF229002C0205 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +224,26 @@
 				320CC2A42B912EE6009F8735 /* DataFetcher.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		320CC2B32B91A50A009F8735 /* LogixPro */ = {
+			isa = PBXGroup;
+			children = (
+				320CC2B42B91A50A009F8735 /* LogixProApp.swift */,
+				320CC2B62B91A50A009F8735 /* ContentView.swift */,
+				320CC2B82B91A50B009F8735 /* Assets.xcassets */,
+				320CC2BD2B91A50B009F8735 /* LogixPro.entitlements */,
+				320CC2BA2B91A50B009F8735 /* Preview Content */,
+			);
+			path = LogixPro;
+			sourceTree = "<group>";
+		};
+		320CC2BA2B91A50B009F8735 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				320CC2BB2B91A50B009F8735 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		4508719B207E5A1A00EE2D31 /* Frameworks */ = {
@@ -321,6 +358,7 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
+				320CC2B32B91A50A009F8735 /* LogixPro */,
 				320CC28B2B912E11009F8735 /* LogixDemo */,
 				8933C7811EB5B7E0000D00A4 /* Sources */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
@@ -334,6 +372,7 @@
 			children = (
 				52D6D97C1BEFF229002C0205 /* Logix.framework */,
 				320CC28A2B912E11009F8735 /* LogixDemo.app */,
+				320CC2B22B91A50A009F8735 /* LogixPro.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -416,6 +455,23 @@
 			productReference = 320CC28A2B912E11009F8735 /* LogixDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		320CC2B12B91A50A009F8735 /* LogixPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320CC2BE2B91A50B009F8735 /* Build configuration list for PBXNativeTarget "LogixPro" */;
+			buildPhases = (
+				320CC2AE2B91A50A009F8735 /* Sources */,
+				320CC2AF2B91A50A009F8735 /* Frameworks */,
+				320CC2B02B91A50A009F8735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogixPro;
+			productName = LogixPro;
+			productReference = 320CC2B22B91A50A009F8735 /* LogixPro.app */;
+			productType = "com.apple.product-type.application";
+		};
 		52D6D97B1BEFF229002C0205 /* Logix-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "Logix-iOS" */;
@@ -447,6 +503,9 @@
 					320CC2892B912E11009F8735 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					320CC2B12B91A50A009F8735 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 1000;
@@ -470,6 +529,7 @@
 			targets = (
 				52D6D97B1BEFF229002C0205 /* Logix-iOS */,
 				320CC2892B912E11009F8735 /* LogixDemo */,
+				320CC2B12B91A50A009F8735 /* LogixPro */,
 			);
 		};
 /* End PBXProject section */
@@ -482,6 +542,15 @@
 				320CC2992B912E12009F8735 /* LaunchScreen.storyboard in Resources */,
 				320CC2962B912E12009F8735 /* Assets.xcassets in Resources */,
 				320CC2942B912E11009F8735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320CC2B02B91A50A009F8735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320CC2BC2B91A50B009F8735 /* Preview Assets.xcassets in Resources */,
+				320CC2B92B91A50B009F8735 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +584,15 @@
 				320CC29F2B912EC2009F8735 /* Utils.swift in Sources */,
 				320CC2A62B912EE6009F8735 /* Config.swift in Sources */,
 				320CC2A82B912EE6009F8735 /* DataFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320CC2AE2B91A50A009F8735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320CC2B72B91A50A009F8735 /* ContentView.swift in Sources */,
+				320CC2B52B91A50A009F8735 /* LogixProApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +756,91 @@
 			};
 			name = Release;
 		};
+		320CC2BF2B91A50B009F8735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = LogixPro/LogixPro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LogixPro/Preview Content\"";
+				DEVELOPMENT_TEAM = DY3Z5JMQ7L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Logix. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vision.LogixPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		320CC2C02B91A50B009F8735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = LogixPro/LogixPro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LogixPro/Preview Content\"";
+				DEVELOPMENT_TEAM = DY3Z5JMQ7L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Logix. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vision.LogixPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		52D6D98E1BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -826,10 +989,13 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				USE_HEADERMAP = YES;
 			};
@@ -869,11 +1035,14 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				USE_HEADERMAP = YES;
 			};
@@ -887,6 +1056,15 @@
 			buildConfigurations = (
 				320CC29B2B912E12009F8735 /* Debug */,
 				320CC29C2B912E12009F8735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320CC2BE2B91A50B009F8735 /* Build configuration list for PBXNativeTarget "LogixPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320CC2BF2B91A50B009F8735 /* Debug */,
+				320CC2C02B91A50B009F8735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
