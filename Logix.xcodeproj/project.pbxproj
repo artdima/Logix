@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320CC28D2B912E11009F8735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC28C2B912E11009F8735 /* AppDelegate.swift */; };
+		320CC28F2B912E11009F8735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC28E2B912E11009F8735 /* SceneDelegate.swift */; };
+		320CC2912B912E11009F8735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2902B912E11009F8735 /* ViewController.swift */; };
+		320CC2942B912E11009F8735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2922B912E11009F8735 /* Main.storyboard */; };
+		320CC2962B912E12009F8735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2952B912E12009F8735 /* Assets.xcassets */; };
+		320CC2992B912E12009F8735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2972B912E12009F8735 /* LaunchScreen.storyboard */; };
+		320CC29F2B912EC2009F8735 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC29E2B912EC2009F8735 /* Utils.swift */; };
+		320CC2A52B912EE6009F8735 /* HTTPValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2A12B912EE6009F8735 /* HTTPValidation.swift */; };
+		320CC2A62B912EE6009F8735 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2A22B912EE6009F8735 /* Config.swift */; };
+		320CC2A72B912EE6009F8735 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2A32B912EE6009F8735 /* Routing.swift */; };
+		320CC2A82B912EE6009F8735 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2A42B912EE6009F8735 /* DataFetcher.swift */; };
+		320CC2A92B912FAC009F8735 /* Logix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Logix.framework */; };
+		320CC2AA2B912FAC009F8735 /* Logix.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Logix.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		327C506C28E818BD00BEBBDD /* AnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C506B28E818BD00BEBBDD /* AnalyticsModel.swift */; };
 		327C506F28E8253E00BEBBDD /* AnaliticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C506D28E8253E00BEBBDD /* AnaliticsCell.swift */; };
 		327C507028E8253E00BEBBDD /* AnaliticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C506E28E8253E00BEBBDD /* AnaliticsCell.xib */; };
@@ -58,7 +71,44 @@
 		8933C7851EB5B820000D00A4 /* Logix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Logix.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		320CC2AB2B912FAC009F8735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
+			remoteInfo = "Logix-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		320CC2AD2B912FAC009F8735 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				320CC2AA2B912FAC009F8735 /* Logix.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		320CC28A2B912E11009F8735 /* LogixDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogixDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		320CC28C2B912E11009F8735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		320CC28E2B912E11009F8735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		320CC2902B912E11009F8735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		320CC2932B912E11009F8735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		320CC2952B912E12009F8735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		320CC2982B912E12009F8735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		320CC29A2B912E12009F8735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320CC29E2B912EC2009F8735 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		320CC2A12B912EE6009F8735 /* HTTPValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPValidation.swift; sourceTree = "<group>"; };
+		320CC2A22B912EE6009F8735 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		320CC2A32B912EE6009F8735 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		320CC2A42B912EE6009F8735 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		327C506B28E818BD00BEBBDD /* AnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModel.swift; sourceTree = "<group>"; };
 		327C506D28E8253E00BEBBDD /* AnaliticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticsCell.swift; sourceTree = "<group>"; };
 		327C506E28E8253E00BEBBDD /* AnaliticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaliticsCell.xib; sourceTree = "<group>"; };
@@ -114,6 +164,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		320CC2872B912E11009F8735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320CC2A92B912FAC009F8735 /* Logix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D9781BEFF229002C0205 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +182,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320CC28B2B912E11009F8735 /* LogixDemo */ = {
+			isa = PBXGroup;
+			children = (
+				320CC28C2B912E11009F8735 /* AppDelegate.swift */,
+				320CC28E2B912E11009F8735 /* SceneDelegate.swift */,
+				320CC29E2B912EC2009F8735 /* Utils.swift */,
+				320CC2A02B912EE6009F8735 /* Networking */,
+				320CC2902B912E11009F8735 /* ViewController.swift */,
+				320CC2922B912E11009F8735 /* Main.storyboard */,
+				320CC2952B912E12009F8735 /* Assets.xcassets */,
+				320CC2972B912E12009F8735 /* LaunchScreen.storyboard */,
+				320CC29A2B912E12009F8735 /* Info.plist */,
+			);
+			path = LogixDemo;
+			sourceTree = "<group>";
+		};
+		320CC2A02B912EE6009F8735 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				320CC2A12B912EE6009F8735 /* HTTPValidation.swift */,
+				320CC2A22B912EE6009F8735 /* Config.swift */,
+				320CC2A32B912EE6009F8735 /* Routing.swift */,
+				320CC2A42B912EE6009F8735 /* DataFetcher.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		4508719B207E5A1A00EE2D31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +321,7 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
+				320CC28B2B912E11009F8735 /* LogixDemo */,
 				8933C7811EB5B7E0000D00A4 /* Sources */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
@@ -247,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				52D6D97C1BEFF229002C0205 /* Logix.framework */,
+				320CC28A2B912E11009F8735 /* LogixDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -310,6 +397,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		320CC2892B912E11009F8735 /* LogixDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320CC29D2B912E12009F8735 /* Build configuration list for PBXNativeTarget "LogixDemo" */;
+			buildPhases = (
+				320CC2862B912E11009F8735 /* Sources */,
+				320CC2872B912E11009F8735 /* Frameworks */,
+				320CC2882B912E11009F8735 /* Resources */,
+				320CC2AD2B912FAC009F8735 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				320CC2AC2B912FAC009F8735 /* PBXTargetDependency */,
+			);
+			name = LogixDemo;
+			productName = LogixDemo;
+			productReference = 320CC28A2B912E11009F8735 /* LogixDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		52D6D97B1BEFF229002C0205 /* Logix-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "Logix-iOS" */;
@@ -334,10 +440,13 @@
 		52D6D9731BEFF229002C0205 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Logix;
 				TargetAttributes = {
+					320CC2892B912E11009F8735 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 1000;
@@ -360,11 +469,22 @@
 			projectRoot = "";
 			targets = (
 				52D6D97B1BEFF229002C0205 /* Logix-iOS */,
+				320CC2892B912E11009F8735 /* LogixDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		320CC2882B912E11009F8735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320CC2992B912E12009F8735 /* LaunchScreen.storyboard in Resources */,
+				320CC2962B912E12009F8735 /* Assets.xcassets in Resources */,
+				320CC2942B912E11009F8735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D97A1BEFF229002C0205 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +503,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		320CC2862B912E11009F8735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320CC2912B912E11009F8735 /* ViewController.swift in Sources */,
+				320CC2A52B912EE6009F8735 /* HTTPValidation.swift in Sources */,
+				320CC2A72B912EE6009F8735 /* Routing.swift in Sources */,
+				320CC28D2B912E11009F8735 /* AppDelegate.swift in Sources */,
+				320CC28F2B912E11009F8735 /* SceneDelegate.swift in Sources */,
+				320CC29F2B912EC2009F8735 /* Utils.swift in Sources */,
+				320CC2A62B912EE6009F8735 /* Config.swift in Sources */,
+				320CC2A82B912EE6009F8735 /* DataFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D9771BEFF229002C0205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,7 +565,119 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		320CC2AC2B912FAC009F8735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D97B1BEFF229002C0205 /* Logix-iOS */;
+			targetProxy = 320CC2AB2B912FAC009F8735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		320CC2922B912E11009F8735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				320CC2932B912E11009F8735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		320CC2972B912E12009F8735 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				320CC2982B912E12009F8735 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		320CC29B2B912E12009F8735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DY3Z5JMQ7L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogixDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vision.LogixDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		320CC29C2B912E12009F8735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DY3Z5JMQ7L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogixDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vision.LogixDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		52D6D98E1BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -635,6 +882,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		320CC29D2B912E12009F8735 /* Build configuration list for PBXNativeTarget "LogixDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320CC29B2B912E12009F8735 /* Debug */,
+				320CC29C2B912E12009F8735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		52D6D9761BEFF229002C0205 /* Build configuration list for PBXProject "Logix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
