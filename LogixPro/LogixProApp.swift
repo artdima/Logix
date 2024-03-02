@@ -12,7 +12,14 @@ import SwiftUI
 struct LogixProApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
+                .preferredColorScheme(.dark)
         }
+        .commands {
+            LogixEditCommands()
+        }
+        
+        //.windowToolbarStyle(.unified)
+        
     }
 }

@@ -21,12 +21,21 @@
 		320CC2A92B912FAC009F8735 /* Logix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Logix.framework */; };
 		320CC2AA2B912FAC009F8735 /* Logix.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Logix.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		320CC2B52B91A50A009F8735 /* LogixProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2B42B91A50A009F8735 /* LogixProApp.swift */; };
-		320CC2B72B91A50A009F8735 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2B62B91A50A009F8735 /* ContentView.swift */; };
+		320CC2B72B91A50A009F8735 /* RequestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2B62B91A50A009F8735 /* RequestListView.swift */; };
 		320CC2B92B91A50B009F8735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2B82B91A50B009F8735 /* Assets.xcassets */; };
 		320CC2BC2B91A50B009F8735 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CC2BB2B91A50B009F8735 /* Preview Assets.xcassets */; };
+		320CC2CD2B91AB4B009F8735 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2CC2B91AB4B009F8735 /* RequestModel.swift */; };
+		320CC2CF2B91C5FC009F8735 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2CE2B91C5FC009F8735 /* SidebarView.swift */; };
+		320CC2D12B91C807009F8735 /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2D02B91C807009F8735 /* AppSection.swift */; };
+		320CC2D32B91CD64009F8735 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2D22B91CD64009F8735 /* MainContentView.swift */; };
+		320CC2D52B91F0E3009F8735 /* DetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2D42B91F0E3009F8735 /* DetailRequest.swift */; };
+		320CC2DA2B9204AD009F8735 /* LogixEditCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2D92B9204AD009F8735 /* LogixEditCommands.swift */; };
+		320CC2DC2B9204F0009F8735 /* MainCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CC2DB2B9204F0009F8735 /* MainCommands.swift */; };
 		327C506C28E818BD00BEBBDD /* AnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C506B28E818BD00BEBBDD /* AnalyticsModel.swift */; };
 		327C506F28E8253E00BEBBDD /* AnaliticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C506D28E8253E00BEBBDD /* AnaliticsCell.swift */; };
 		327C507028E8253E00BEBBDD /* AnaliticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C506E28E8253E00BEBBDD /* AnaliticsCell.xib */; };
+		329C5F662B9277680019C20F /* PressActionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C5F652B9277680019C20F /* PressActionsModifier.swift */; };
+		329C5F682B92779B0019C20F /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C5F672B92779B0019C20F /* SegmentedControl.swift */; };
 		32A2F3DA295B4D2200A2B74B /* AnalyticsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2F3D9295B4D2200A2B74B /* AnalyticsDetailViewController.swift */; };
 		32C4E2B528E831F400702271 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4E2B428E831F400702271 /* Extension_UIColor.swift */; };
 		451C9E552080E5E4002A34BC /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451C9E542080E5E4002A34BC /* Flow.storyboard */; };
@@ -115,13 +124,22 @@
 		320CC2A42B912EE6009F8735 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		320CC2B22B91A50A009F8735 /* LogixPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogixPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		320CC2B42B91A50A009F8735 /* LogixProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixProApp.swift; sourceTree = "<group>"; };
-		320CC2B62B91A50A009F8735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		320CC2B62B91A50A009F8735 /* RequestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListView.swift; sourceTree = "<group>"; };
 		320CC2B82B91A50B009F8735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320CC2BB2B91A50B009F8735 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		320CC2BD2B91A50B009F8735 /* LogixPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogixPro.entitlements; sourceTree = "<group>"; };
+		320CC2CC2B91AB4B009F8735 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		320CC2CE2B91C5FC009F8735 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		320CC2D02B91C807009F8735 /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
+		320CC2D22B91CD64009F8735 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		320CC2D42B91F0E3009F8735 /* DetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRequest.swift; sourceTree = "<group>"; };
+		320CC2D92B9204AD009F8735 /* LogixEditCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixEditCommands.swift; sourceTree = "<group>"; };
+		320CC2DB2B9204F0009F8735 /* MainCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCommands.swift; sourceTree = "<group>"; };
 		327C506B28E818BD00BEBBDD /* AnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModel.swift; sourceTree = "<group>"; };
 		327C506D28E8253E00BEBBDD /* AnaliticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticsCell.swift; sourceTree = "<group>"; };
 		327C506E28E8253E00BEBBDD /* AnaliticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaliticsCell.xib; sourceTree = "<group>"; };
+		329C5F652B9277680019C20F /* PressActionsModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressActionsModifier.swift; sourceTree = "<group>"; };
+		329C5F672B92779B0019C20F /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		32A2F3D9295B4D2200A2B74B /* AnalyticsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDetailViewController.swift; sourceTree = "<group>"; };
 		32C4E2B428E831F400702271 /* Extension_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 		451C9E542080E5E4002A34BC /* Flow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
@@ -229,8 +247,15 @@
 		320CC2B32B91A50A009F8735 /* LogixPro */ = {
 			isa = PBXGroup;
 			children = (
+				320CC2D82B920474009F8735 /* Features */,
+				320CC2CB2B91AB30009F8735 /* Models */,
 				320CC2B42B91A50A009F8735 /* LogixProApp.swift */,
-				320CC2B62B91A50A009F8735 /* ContentView.swift */,
+				320CC2D22B91CD64009F8735 /* MainContentView.swift */,
+				320CC2CE2B91C5FC009F8735 /* SidebarView.swift */,
+				320CC2B62B91A50A009F8735 /* RequestListView.swift */,
+				320CC2D42B91F0E3009F8735 /* DetailRequest.swift */,
+				329C5F652B9277680019C20F /* PressActionsModifier.swift */,
+				329C5F672B92779B0019C20F /* SegmentedControl.swift */,
 				320CC2B82B91A50B009F8735 /* Assets.xcassets */,
 				320CC2BD2B91A50B009F8735 /* LogixPro.entitlements */,
 				320CC2BA2B91A50B009F8735 /* Preview Content */,
@@ -244,6 +269,32 @@
 				320CC2BB2B91A50B009F8735 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		320CC2CB2B91AB30009F8735 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				320CC2CC2B91AB4B009F8735 /* RequestModel.swift */,
+				320CC2D02B91C807009F8735 /* AppSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		320CC2D72B92045C009F8735 /* WindowCommands */ = {
+			isa = PBXGroup;
+			children = (
+				320CC2D92B9204AD009F8735 /* LogixEditCommands.swift */,
+				320CC2DB2B9204F0009F8735 /* MainCommands.swift */,
+			);
+			path = WindowCommands;
+			sourceTree = "<group>";
+		};
+		320CC2D82B920474009F8735 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				320CC2D72B92045C009F8735 /* WindowCommands */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		4508719B207E5A1A00EE2D31 /* Frameworks */ = {
@@ -591,8 +642,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320CC2B72B91A50A009F8735 /* ContentView.swift in Sources */,
+				320CC2B72B91A50A009F8735 /* RequestListView.swift in Sources */,
+				320CC2D52B91F0E3009F8735 /* DetailRequest.swift in Sources */,
+				329C5F682B92779B0019C20F /* SegmentedControl.swift in Sources */,
+				320CC2D12B91C807009F8735 /* AppSection.swift in Sources */,
+				320CC2CF2B91C5FC009F8735 /* SidebarView.swift in Sources */,
 				320CC2B52B91A50A009F8735 /* LogixProApp.swift in Sources */,
+				320CC2DA2B9204AD009F8735 /* LogixEditCommands.swift in Sources */,
+				329C5F662B9277680019C20F /* PressActionsModifier.swift in Sources */,
+				320CC2DC2B9204F0009F8735 /* MainCommands.swift in Sources */,
+				320CC2CD2B91AB4B009F8735 /* RequestModel.swift in Sources */,
+				320CC2D32B91CD64009F8735 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
