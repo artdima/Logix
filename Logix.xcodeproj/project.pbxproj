@@ -142,6 +142,7 @@
 		329C5F672B92779B0019C20F /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		32A2F3D9295B4D2200A2B74B /* AnalyticsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDetailViewController.swift; sourceTree = "<group>"; };
 		32C4E2B428E831F400702271 /* Extension_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
+		32F0CDE72B945F7600264A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		451C9E542080E5E4002A34BC /* Flow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
 		451C9E572080E607002A34BC /* LogixNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixNavigationController.swift; sourceTree = "<group>"; };
 		451C9E592080E8D2002A34BC /* LogixBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixBaseViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +248,7 @@
 		320CC2B32B91A50A009F8735 /* LogixPro */ = {
 			isa = PBXGroup;
 			children = (
+				32F0CDE72B945F7600264A5D /* Info.plist */,
 				320CC2D82B920474009F8735 /* Features */,
 				320CC2CB2B91AB30009F8735 /* Models */,
 				320CC2B42B91A50A009F8735 /* LogixProApp.swift */,
@@ -840,7 +842,9 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogixPro/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Logix. All rights reserved.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Network usage required for debugging purposes ";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -883,7 +887,9 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogixPro/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Logix. All rights reserved.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Network usage required for debugging purposes ";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
