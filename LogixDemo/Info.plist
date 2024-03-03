@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Network usage required for debugging purposes </string>
+    <key>NSBonjourServices</key>
+    <array>
+      <string>_logix._tcp</string>
+    </array>
 </dict>
 </plist>
