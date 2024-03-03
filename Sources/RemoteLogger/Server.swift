@@ -41,9 +41,10 @@ class Server {
         listener.start(queue: .main)
     }
 
-    func send() {
+    func send(with request: RequestModel) {
         connections.forEach {
-            $0.send("super message from the server! \(Int(Date().timeIntervalSince1970))")
+            guard let encodedData = try? JSONEncoder().encode(request) else { return }
+            $0.send(encodedData)
         }
     }
 }

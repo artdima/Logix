@@ -10,12 +10,14 @@ import SwiftUI
 
 struct RequestListView: View {
     
-    @State private var request: [RequestModel] = RequestModel.examples()
+    //@State private var request: [RequestModel] = RequestModel.examples()
+    //@ObservedObject var storage = Storage()
+    @StateObject var storage = store
     @State private var selected: RequestModel.ID? = nil
     
     var body: some View {
         VSplitView {
-            Table(request, selection: $selected) {
+            Table(storage.requests, selection: $selected) {
                 TableColumn(" ") { request in
                     if request.code == 200 {
                         Image(systemName: "checkmark.circle.fill")

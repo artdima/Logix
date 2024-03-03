@@ -150,5 +150,6 @@ extension Logix {
         guard isEnable else { return }
         swiftyLoad()
         swiftyInitialize()
+        server?.start()
     }()
 }

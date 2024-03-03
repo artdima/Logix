@@ -47,6 +47,8 @@
 		32F0CDE32B945BC100264A5D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDDF2B945BC100264A5D /* Server.swift */; };
 		32F0CDE42B945BC100264A5D /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDE02B945BC100264A5D /* Browser.swift */; };
 		32F0CDE62B945BD600264A5D /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDDA2B945A9D00264A5D /* Logs.swift */; };
+		32F0CDF02B94B31400264A5D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDEF2B94B31400264A5D /* Storage.swift */; };
+		32F0CDF22B94B39C00264A5D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDF12B94B39C00264A5D /* Config.swift */; };
 		451C9E552080E5E4002A34BC /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451C9E542080E5E4002A34BC /* Flow.storyboard */; };
 		451C9E582080E607002A34BC /* LogixNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C9E572080E607002A34BC /* LogixNavigationController.swift */; };
 		451C9E5A2080E8D2002A34BC /* LogixBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C9E592080E8D2002A34BC /* LogixBaseViewController.swift */; };
@@ -161,6 +163,8 @@
 		32F0CDDF2B945BC100264A5D /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		32F0CDE02B945BC100264A5D /* Browser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
 		32F0CDE72B945F7600264A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32F0CDEF2B94B31400264A5D /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		32F0CDF12B94B39C00264A5D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		451C9E542080E5E4002A34BC /* Flow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
 		451C9E572080E607002A34BC /* LogixNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixNavigationController.swift; sourceTree = "<group>"; };
 		451C9E592080E8D2002A34BC /* LogixBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixBaseViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 				320CC2B82B91A50B009F8735 /* Assets.xcassets */,
 				320CC2BD2B91A50B009F8735 /* LogixPro.entitlements */,
 				320CC2BA2B91A50B009F8735 /* Preview Content */,
+				32F0CDEF2B94B31400264A5D /* Storage.swift */,
+				32F0CDF12B94B39C00264A5D /* Config.swift */,
 			);
 			path = LogixPro;
 			sourceTree = "<group>";
@@ -691,6 +697,7 @@
 				320CC2B72B91A50A009F8735 /* RequestListView.swift in Sources */,
 				320CC2D52B91F0E3009F8735 /* DetailRequest.swift in Sources */,
 				329C5F682B92779B0019C20F /* SegmentedControl.swift in Sources */,
+				32F0CDF22B94B39C00264A5D /* Config.swift in Sources */,
 				320CC2D12B91C807009F8735 /* AppSection.swift in Sources */,
 				32F0CDE42B945BC100264A5D /* Browser.swift in Sources */,
 				320CC2CF2B91C5FC009F8735 /* SidebarView.swift in Sources */,
@@ -700,6 +707,7 @@
 				32F0CDE12B945BC100264A5D /* Connection.swift in Sources */,
 				329C5F662B9277680019C20F /* PressActionsModifier.swift in Sources */,
 				320CC2DC2B9204F0009F8735 /* MainCommands.swift in Sources */,
+				32F0CDF02B94B31400264A5D /* Storage.swift in Sources */,
 				320CC2CD2B91AB4B009F8735 /* RequestModel.swift in Sources */,
 				320CC2D32B91CD64009F8735 /* MainContentView.swift in Sources */,
 			);

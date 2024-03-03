@@ -23,8 +23,6 @@ class RequestsViewController: LogixBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        server?.start()
-        
         addSearchController()
         setupNavigation()
     
@@ -37,7 +35,6 @@ class RequestsViewController: LogixBaseViewController {
             DispatchQueue.main.sync { [weak self] in
                 self?.filteredRequests = self?.filterRequests(text: self?.searchController?.searchBar.text) ?? []
                 self?.collectionView.reloadData()
-                server?.send()
             }
         }
         

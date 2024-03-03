@@ -34,6 +34,9 @@ open class Storage: NSObject {
             requests = Array(requests.prefix(limit))
         }
         NotificationCenter.default.post(name: newRequestNotification, object: nil)
+        
+        guard let request else { return }
+        server?.send(with: request)
     }
     
     func saveAnalitics(event: AnalyticsModel?) {

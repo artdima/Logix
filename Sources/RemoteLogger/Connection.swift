@@ -42,8 +42,8 @@ class Connection {
         connection.start(queue: .main)
     }
 
-    func send(_ message: String) {
-        connection.send(content: message.data(using: .utf8), contentContext: .defaultMessage, isComplete: true, completion: .contentProcessed({ error in
+    func send(_ data: Data) {
+        connection.send(content: data, contentContext: .defaultMessage, isComplete: true, completion: .contentProcessed({ error in
             log("Connection send error: \(String(describing: error))")
         }))
     }

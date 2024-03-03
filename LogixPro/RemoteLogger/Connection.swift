@@ -5,11 +5,11 @@
 //  Created by michal on 29/11/2020.
 //
 
-import Foundation
+import SwiftUI
 import Network
 
 class Connection {
-
+    
     let connection: NWConnection
     private var buffer = Data()
     
@@ -63,10 +63,20 @@ class Connection {
     private func receiveMessage() {
         connection.receive(minimumIncompleteLength: 1, maximumLength: 65535) { [weak self] data, _, isCompleted, error in
             guard let self = self else { return }
+            
             if let data = data,
-               let message = String(data: data, encoding: .utf8) {
-                log("Connection receiveMessage message: \(message)")
+               let decodedData = try? JSONDecoder().decode(RequestModel.self, from: data) {
+                //Storage.shared.saveRequest(request: decodedData)
+                store.saveRequest(request: decodedData)
+                
+                log("#### URL: \(decodedData.url)")
             }
+            
+            
+//            if let data = data,
+//               let message = String(data: data, encoding: .utf8) {
+//                log("Connection receiveMessage message: \(message)")
+//            }
             self.receiveMessage()
             
 //            if let data = data, !data.isEmpty {
