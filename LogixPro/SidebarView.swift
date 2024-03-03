@@ -15,6 +15,10 @@ struct SidebarView: View {
     var body: some View {
         List(selection: $selectedApp) {
             Section("Favorites") {
+                Button("Client") {
+                    client.start()
+                }
+                
                 ForEach(AppSection.appMock()) { selection in
                     if case .app(let name, let image) = selection {
                         Label(name, systemImage: image)

@@ -1,0 +1,41 @@
+//
+//  Client.swift
+//  MultiConnect
+//
+//  Created by michal on 29/11/2020.
+//
+
+import Foundation
+import Network
+import os.log
+
+func log(_ message: String) {
+    let log = OSLog(subsystem: Bundle.main.bundleIdentifier!, category: "MPLogging")
+    os_log("%@", log: log, type: .debug, message)
+}
+
+class Browser {
+
+    let browser: NWBrowser
+
+    init() {
+        let parameters = NWParameters()
+        parameters.includePeerToPeer = true
+
+        browser = NWBrowser(for: .bonjour(type: "_logix._tcp", domain: nil), using: parameters)
+    }
+
+    func start(handler: @escaping (NWBrowser.Result) -> Void) {
+        browser.stateUpdateHandler = { newState in
+            log("browser.stateUpdateHandler \(newState)")
+        }
+        browser.browseResultsChangedHandler = { results, changes in
+            for result in results {
+                if case NWEndpoint.service = result.endpoint {
+                    handler(result)
+                }
+            }
+        }
+        browser.start(queue: .main)
+    }
+}

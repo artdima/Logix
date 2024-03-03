@@ -23,6 +23,8 @@ class RequestsViewController: LogixBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        server?.start()
+        
         addSearchController()
         setupNavigation()
     
@@ -35,6 +37,7 @@ class RequestsViewController: LogixBaseViewController {
             DispatchQueue.main.sync { [weak self] in
                 self?.filteredRequests = self?.filterRequests(text: self?.searchController?.searchBar.text) ?? []
                 self?.collectionView.reloadData()
+                server?.send()
             }
         }
         
@@ -50,7 +53,6 @@ class RequestsViewController: LogixBaseViewController {
                                                name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)),
                     name: UIResponder.keyboardWillHideNotification, object: nil)
-        
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
