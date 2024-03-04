@@ -32,6 +32,11 @@ struct RequestListView: View {
                     .width(50)
                 TableColumn("URL", value: \.url)
                 TableColumn("Date", value: \.date.description)
+                TableColumn("Duration") { request in
+                    if let duration = request.duration {
+                        Text(duration.formattedMilliseconds())
+                    }
+                }
             }
             
             let request = storage.requests.first(where: { $0.id == selection })

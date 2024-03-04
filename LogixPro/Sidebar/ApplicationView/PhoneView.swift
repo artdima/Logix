@@ -9,15 +9,16 @@
 import SwiftUI
 
 struct PhoneView: View {
+    var phone: PhoneSection
     var body: some View {
         HStack {
             Image(systemName: "iphone")
                 .resizable()
                 .frame(width: 13, height: 20)
-            Text("iPhone 14 Pro")
+            Text(phone.name ?? "")
                 .font(.title3)
             Spacer()
-            Text("iOS 17.0")
+            Text(phone.iosVersion ?? "")
             Image(systemName: "personalhotspot.circle")
                 .font(.title3)
                 .foregroundColor(.gray)
@@ -26,5 +27,6 @@ struct PhoneView: View {
 }
 
 #Preview {
-    PhoneView()
+    PhoneView(phone: PhoneSection(name: "iPhone 15 Pro Max",
+                                  iosVersion: "iOS 17.2"))
 }

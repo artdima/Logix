@@ -52,6 +52,10 @@
 		32F0CDF52B95A7A400264A5D /* JSONViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 32F0CDF42B95A7A400264A5D /* JSONViewer */; };
 		32F0CDF92B96183E00264A5D /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDF82B96183E00264A5D /* ApplicationView.swift */; };
 		32F0CDFB2B96214C00264A5D /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDFA2B96214C00264A5D /* PhoneView.swift */; };
+		32F0CDFE2B96570E00264A5D /* HeaderMenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDFD2B96570E00264A5D /* HeaderMenuDetailView.swift */; };
+		32F0CE022B965A7900264A5D /* DetailJsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CE012B965A7900264A5D /* DetailJsonView.swift */; };
+		32F0CE042B96671500264A5D /* DetailCurlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CE032B96671500264A5D /* DetailCurlView.swift */; };
+		32F0CE072B966A2D00264A5D /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CE062B966A2D00264A5D /* Double+Extension.swift */; };
 		451C9E552080E5E4002A34BC /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451C9E542080E5E4002A34BC /* Flow.storyboard */; };
 		451C9E582080E607002A34BC /* LogixNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C9E572080E607002A34BC /* LogixNavigationController.swift */; };
 		451C9E5A2080E8D2002A34BC /* LogixBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C9E592080E8D2002A34BC /* LogixBaseViewController.swift */; };
@@ -170,6 +174,10 @@
 		32F0CDF12B94B39C00264A5D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		32F0CDF82B96183E00264A5D /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
 		32F0CDFA2B96214C00264A5D /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		32F0CDFD2B96570E00264A5D /* HeaderMenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMenuDetailView.swift; sourceTree = "<group>"; };
+		32F0CE012B965A7900264A5D /* DetailJsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJsonView.swift; sourceTree = "<group>"; };
+		32F0CE032B96671500264A5D /* DetailCurlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCurlView.swift; sourceTree = "<group>"; };
+		32F0CE062B966A2D00264A5D /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		451C9E542080E5E4002A34BC /* Flow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
 		451C9E572080E607002A34BC /* LogixNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixNavigationController.swift; sourceTree = "<group>"; };
 		451C9E592080E8D2002A34BC /* LogixBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixBaseViewController.swift; sourceTree = "<group>"; };
@@ -284,14 +292,14 @@
 				320CC2D22B91CD64009F8735 /* MainContentView.swift */,
 				32F0CDF62B96180A00264A5D /* Sidebar */,
 				320CC2B62B91A50A009F8735 /* RequestListView.swift */,
-				320CC2D42B91F0E3009F8735 /* DetailRequest.swift */,
-				329C5F652B9277680019C20F /* PressActionsModifier.swift */,
-				329C5F672B92779B0019C20F /* SegmentedControl.swift */,
+				32F0CDFC2B9656DF00264A5D /* Detail */,
 				320CC2B82B91A50B009F8735 /* Assets.xcassets */,
 				320CC2BD2B91A50B009F8735 /* LogixPro.entitlements */,
 				320CC2BA2B91A50B009F8735 /* Preview Content */,
+				329C5F652B9277680019C20F /* PressActionsModifier.swift */,
 				32F0CDEF2B94B31400264A5D /* Storage.swift */,
 				32F0CDF12B94B39C00264A5D /* Config.swift */,
+				32F0CE052B966A1000264A5D /* Extension */,
 			);
 			path = LogixPro;
 			sourceTree = "<group>";
@@ -368,6 +376,42 @@
 				32F0CDFA2B96214C00264A5D /* PhoneView.swift */,
 			);
 			path = ApplicationView;
+			sourceTree = "<group>";
+		};
+		32F0CDFC2B9656DF00264A5D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				32F0CDFF2B96596900264A5D /* Header */,
+				32F0CE002B9659F600264A5D /* DetailView */,
+				320CC2D42B91F0E3009F8735 /* DetailRequest.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		32F0CDFF2B96596900264A5D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				329C5F672B92779B0019C20F /* SegmentedControl.swift */,
+				32F0CDFD2B96570E00264A5D /* HeaderMenuDetailView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		32F0CE002B9659F600264A5D /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				32F0CE012B965A7900264A5D /* DetailJsonView.swift */,
+				32F0CE032B96671500264A5D /* DetailCurlView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		32F0CE052B966A1000264A5D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				32F0CE062B966A2D00264A5D /* Double+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		4508719B207E5A1A00EE2D31 /* Frameworks */ = {
@@ -724,8 +768,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				32F0CDE32B945BC100264A5D /* Server.swift in Sources */,
+				32F0CDFE2B96570E00264A5D /* HeaderMenuDetailView.swift in Sources */,
+				32F0CE042B96671500264A5D /* DetailCurlView.swift in Sources */,
+				32F0CE022B965A7900264A5D /* DetailJsonView.swift in Sources */,
 				320CC2B72B91A50A009F8735 /* RequestListView.swift in Sources */,
 				320CC2D52B91F0E3009F8735 /* DetailRequest.swift in Sources */,
+				32F0CE072B966A2D00264A5D /* Double+Extension.swift in Sources */,
 				329C5F682B92779B0019C20F /* SegmentedControl.swift in Sources */,
 				32F0CDF22B94B39C00264A5D /* Config.swift in Sources */,
 				32F0CDF92B96183E00264A5D /* ApplicationView.swift in Sources */,
