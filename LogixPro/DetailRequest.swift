@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import JSONViewer
 
 struct DetailRequest: View {
     @State private var selectedSection: Int = 0
@@ -25,8 +26,13 @@ struct DetailRequest: View {
             .padding(.top, 4)
             
             Divider()
-            if let selectedRequest {
-                Text(selectedRequest.curlRequest)
+            //if let curlRequest = selectedRequest?.curlRequest,
+            //   let rootNode: JSONNode = curlRequest.jsonNode() {
+            if let httpBodyData = selectedRequest?.dataResponse, 
+               let httpBody = String(data: httpBodyData, encoding: .utf8),
+               let rootNode: JSONNode = httpBody.jsonNode() {
+                //Text(selectedRequest.curlRequest)
+                JSONViewer(rootNode: rootNode)
             }
             
             

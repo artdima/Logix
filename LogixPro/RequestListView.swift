@@ -10,8 +10,6 @@ import SwiftUI
 
 struct RequestListView: View {
     
-    //@State private var request: [RequestModel] = RequestModel.examples()
-    //@ObservedObject var storage = Storage()
     @StateObject var storage = store
     @State private var selection: RequestModel.ID? = nil
     

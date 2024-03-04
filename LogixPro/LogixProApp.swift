@@ -14,12 +14,13 @@ struct LogixProApp: App {
         WindowGroup {
             MainContentView()
                 .preferredColorScheme(.dark)
+                .onAppear {
+                    client.start()
+                }
         }
         .commands {
             LogixEditCommands()
         }
-        
         //.windowToolbarStyle(.unified)
-        
     }
 }

@@ -19,8 +19,8 @@ enum AppSection: Identifiable, Hashable {
 
 extension AppSection {
     static func appMock() -> [AppSection] {
-        return [.app(name: "Grow Food", iconName: "folder"),
-                .app(name: "Priem", iconName: "folder")]
+        return [.app(name: "Grow Food", iconName: "folder")]
+                //.app(name: "Priem", iconName: "folder")]
     }
     
     static func homeMock() -> [AppSection] {

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "jsonviewer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/varkrishna/JSONViewer",
+      "state" : {
+        "branch" : "main",
+        "revision" : "310f7672859b22de2981e74695bfa49c9b56490f"
+      }
+    }
+  ],
+  "version" : 2
+}

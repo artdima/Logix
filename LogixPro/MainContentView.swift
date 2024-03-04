@@ -16,21 +16,16 @@ struct MainContentView: View {
     
     enum FilterCategory: String, CaseIterable, Identifiable {
         case all = "All"
-        case lakes = "Lakes"
-        case rivers = "Rivers"
-        case mountains = "Mountains"
+        case network = "Network"
+        case analitics = "Analitics"
 
         var id: FilterCategory { self }
     }
     
-    
     var body: some View {
         NavigationSplitView {
             SidebarView()
-        } 
-//        content: {
-//            
-//        } 
+        }
         detail: {
             RequestListView()
                 .inspector(isPresented: $inspectorIsShow) {
