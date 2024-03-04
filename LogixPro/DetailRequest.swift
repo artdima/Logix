@@ -10,6 +10,8 @@ import SwiftUI
 
 struct DetailRequest: View {
     @State private var selectedSection: Int = 0
+    //@Binding var selectedRequest: RequestModel.ID?
+    var selectedRequest: RequestModel?
     
     var body: some View {
         VStack {
@@ -23,12 +25,16 @@ struct DetailRequest: View {
             .padding(.top, 4)
             
             Divider()
+            if let selectedRequest {
+                Text(selectedRequest.curlRequest)
+            }
+            
             
             Spacer()
         }
     }
 }
 
-#Preview {
-    DetailRequest()
-}
+//#Preview {
+//    DetailRequest(selectedRequest: Binding<RequestModel.ID?>)
+//}

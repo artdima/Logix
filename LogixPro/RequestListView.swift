@@ -13,11 +13,11 @@ struct RequestListView: View {
     //@State private var request: [RequestModel] = RequestModel.examples()
     //@ObservedObject var storage = Storage()
     @StateObject var storage = store
-    @State private var selected: RequestModel.ID? = nil
+    @State private var selection: RequestModel.ID? = nil
     
     var body: some View {
         VSplitView {
-            Table(storage.requests, selection: $selected) {
+            Table(storage.requests, selection: $selection) {
                 TableColumn(" ") { request in
                     if request.code == 200 {
                         Image(systemName: "checkmark.circle.fill")
@@ -36,7 +36,8 @@ struct RequestListView: View {
                 TableColumn("Date", value: \.date.description)
             }
             
-            DetailRequest()
+            let request = storage.requests.first(where: { $0.id == selection })
+            DetailRequest(selectedRequest: request)
                 .frame(height: 400)
 //                .frame(maxWidth: .infinity)
 //                .frame(minHeight: screenSize.height / 10)
