@@ -11,7 +11,7 @@
 #if __has_include(<Logix/Logix-Swift.h>)
 #import <Logix/Logix-Swift.h>
 #else
-//#import "Logix-Swift.h"
+#import "Logix-Swift.h"
 #endif
 
 typedef NSURLSessionConfiguration*(*SessionConfigConstructor)(id,SEL);
@@ -22,7 +22,7 @@ static NSURLSessionConfiguration* Logix_defaultSessionConfiguration(id self, SEL
 {
     NSURLSessionConfiguration* config = orig_defaultSessionConfiguration(self,_cmd); // call original method
     
-    //[Logix enable:YES sessionConfiguration:config];
+    [Logix enable:YES sessionConfiguration:config];
     return config;
 }
 
@@ -30,7 +30,7 @@ static NSURLSessionConfiguration* Logix_ephemeralSessionConfiguration(id self, S
 {
     NSURLSessionConfiguration* config = orig_ephemeralSessionConfiguration(self,_cmd); // call original method
     
-    //[Logix enable:YES sessionConfiguration:config];
+    [Logix enable:YES sessionConfiguration:config];
     return config;
 }
 

@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "Logix",
-            targets: ["Logix", "CLogix"]),
+            targets: ["Logix"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,21 +21,6 @@ let package = Package(
         .target(
             name: "Logix",
             dependencies: [],
-            path: "Sources",
-            sources: ["CustomHTTPProtocol.swift",
-                     "Models",
-                     "Storage.swift",
-                     "Subclasses",
-                     "Support Files",
-                     "UI",
-                     "Utils",
-                     "Logix.swift"
-                     ]),
-        .target(name: "CLogix",
-                dependencies: ["Logix"],
-                path: "Sources",
-                sources: ["Objc",
-                          "Logix.h"],
-                publicHeadersPath: "Logix.h")
+            path: "Sources"),
     ]
 )
