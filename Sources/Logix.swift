@@ -142,7 +142,7 @@ public class Logix: NSObject
 /// LogixConstructor calls this to initialize library
 extension Logix {
     
-    @objc static func applicationDidFinishLaunching() {
+    static public func launching() {
         initializeAction
     }
     

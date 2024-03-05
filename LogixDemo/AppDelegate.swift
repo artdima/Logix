@@ -14,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Limit the number of API requests stored
+        /// Initialize library
+        Logix.launching()
+        /// Limit the number of API requests stored
         Logix.limit = 10
         
         return true

@@ -90,7 +90,6 @@
 		45C4F4F120860DC0007D0D17 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C4F4EF20860DC0007D0D17 /* TextTableViewCell.xib */; };
 		45C4F4F320860FBC007D0D17 /* LogixTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4F4F220860FBC007D0D17 /* LogixTextView.swift */; };
 		45C51A1820A20B38006933CE /* Logix.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C51A1720A20B38006933CE /* Logix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45CDAFA52433616800F83C22 /* LogixConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CDAFA32433616800F83C22 /* LogixConstructor.m */; };
 		45DB6DAF2083E738009494AE /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB6DAE2083E738009494AE /* RequestDetailViewController.swift */; };
 		45FF5C4A20875EFA0084BD50 /* LogixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF5C4920875EFA0084BD50 /* LogixView.swift */; };
 		45FF5C4C20875F710084BD50 /* RequestTitleSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF5C4B20875F710084BD50 /* RequestTitleSectionView.swift */; };
@@ -215,7 +214,6 @@
 		45C4F4F220860FBC007D0D17 /* LogixTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixTextView.swift; sourceTree = "<group>"; };
 		45C51A1620A1FDBC006933CE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		45C51A1720A20B38006933CE /* Logix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logix.h; sourceTree = "<group>"; };
-		45CDAFA32433616800F83C22 /* LogixConstructor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogixConstructor.m; sourceTree = "<group>"; };
 		45DB6DAE2083E738009494AE /* RequestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
 		45FF5C4920875EFA0084BD50 /* LogixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogixView.swift; sourceTree = "<group>"; };
 		45FF5C4B20875F710084BD50 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTitleSectionView.swift; sourceTree = "<group>"; };
@@ -514,7 +512,6 @@
 				455818D0207D64A800D2F954 /* NSURLSessionConfiguration+Logix.m */,
 				455818D4207D64A800D2F954 /* LogixMethodSwizzling.h */,
 				455818CF207D64A800D2F954 /* LogixMethodSwizzling.m */,
-				45CDAFA32433616800F83C22 /* LogixConstructor.m */,
 			);
 			path = Objc;
 			sourceTree = "<group>";
@@ -817,7 +814,6 @@
 				32F0CDD82B945A3B00264A5D /* Connection.swift in Sources */,
 				45C4F4EB20860D14007D0D17 /* LogixTableView.swift in Sources */,
 				32F0CDE62B945BD600264A5D /* Logs.swift in Sources */,
-				45CDAFA52433616800F83C22 /* LogixConstructor.m in Sources */,
 				451C9E602080F653002A34BC /* LogixBundle.swift in Sources */,
 				32A2F3DA295B4D2200A2B74B /* AnalyticsDetailViewController.swift in Sources */,
 				64DD525C23F86B3D00AB92C4 /* ShareUtils.swift in Sources */,
