@@ -14,26 +14,33 @@ struct HeaderMenuDetailView: View {
     @Binding var selection: Int
     
     var body: some View {
-        HStack {
-            Text(text)
-                .font(.title3)
-                .bold()
+        VStack {
+            HStack {
+                Text(text)
+                    .font(.title3)
+                    .bold()
+                    .padding(.top, 6)
+                
+                SegmentedControl(
+                    $selection,
+                    options: options,
+                    prominent: true
+                )
+                .frame(maxWidth: .infinity)
+                .frame(height: 26)
                 .padding(.top, 6)
-            
-            SegmentedControl(
-                $selection,
-                options: options,
-                prominent: true
-            )
-            .frame(maxWidth: .infinity)
+            }
             .frame(height: 26)
-            .padding(.top, 6)
+            .padding(.leading)
         }
-        .frame(height: 26)
-        .padding(.leading)
     }
 }
 
-//#Preview {
-//    HeaderMenuDetailView()
-//}
+struct HeaderMenuDetailView_Previews: PreviewProvider {
+    @State static var selection: Int = 0
+    static var previews: some View {
+        HeaderMenuDetailView(text: "Request", 
+                             options: ["Header", "Body", "cURL"],
+                             selection: $selection)
+    }
+}

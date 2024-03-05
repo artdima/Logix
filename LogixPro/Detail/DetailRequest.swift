@@ -15,14 +15,19 @@ struct DetailRequest: View {
     var selectedRequest: RequestModel?
     
     var body: some View {
-        HSplitView {
-            request
-            response
+        VStack {
+            HeaderRequestDetailView()
+            Divider()
+            HSplitView {
+                request
+                response
+            }
         }
     }
     
     var request: some View {
         VStack {
+            
             HeaderMenuDetailView(text: "Request", options: ["Header", "Body", "cURL"], selection: $selectedRequestSection)
             Divider()
             

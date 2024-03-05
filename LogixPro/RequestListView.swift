@@ -39,6 +39,13 @@ struct RequestListView: View {
                 }
             }
             
+            
+            
+            
+            
+            
+            
+            
             let request = storage.requests.first(where: { $0.id == selection })
             DetailRequest(selectedRequest: request)
                 .frame(height: 400)
