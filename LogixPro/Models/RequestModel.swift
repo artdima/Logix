@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct RequestModel: Codable, Identifiable, Hashable {
     let id: String
@@ -43,6 +44,31 @@ struct RequestModel: Codable, Identifiable, Hashable {
         self.dataResponse = dataResponse
         self.errorClientDescription = errorClientDescription
         self.duration = duration
+    }
+    
+    struct Header: Identifiable {
+        var id = UUID()
+        let name: String
+        let desc: String?
+    }
+    
+    var headersArray: [Header] {
+        let keys =  headers.keys.map{ $0.description }.sorted(by: <)
+        var result: [Header] = []
+        keys.forEach { key in
+            result.append(Header(name: key, desc: headers[key]))
+        }
+        return result
+    }
+    
+    var responseHeadersArray: [Header] {
+        guard let responseHeaders else { return [] }
+        let keys =  responseHeaders.keys.map{ $0.description }.sorted(by: <)
+        var result: [Header] = []
+        keys.forEach { key in
+            result.append(Header(name: key, desc: headers[key]))
+        }
+        return result
     }
     
     var curlRequest: String {

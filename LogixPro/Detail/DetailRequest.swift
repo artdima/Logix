@@ -26,11 +26,13 @@ struct DetailRequest: View {
             HeaderMenuDetailView(text: "Request", options: ["Header", "Body", "cURL"], selection: $selectedRequestSection)
             Divider()
             
-            switch selectedRequestSection {
-            case 0: Text("Header")
-            case 1: DetailJsonView(dataResponse: selectedRequest?.httpBody)
-            case 2: DetailCurlView(curl: selectedRequest?.curlRequest)
-            default: Text("Empty")
+            if let selectedRequest {
+                switch selectedRequestSection {
+                case 0: DetailHeaderView(headers: selectedRequest.headersArray)
+                case 1: DetailJsonView(dataResponse: selectedRequest.httpBody)
+                case 2: DetailCurlView(curl: selectedRequest.curlRequest)
+                default: Text("Empty")
+                }
             }
             Spacer()
         }
@@ -40,11 +42,13 @@ struct DetailRequest: View {
         VStack {
             HeaderMenuDetailView(text: "Response", options: ["Header", "Body"], selection: $selectedResponseSection)
             Divider()
-            switch selectedResponseSection {
-            case 0: Text("Header")
-            case 1: DetailJsonView(dataResponse: selectedRequest?.dataResponse)
-            default:
-                Text("Empty")
+            if let selectedRequest {
+                switch selectedResponseSection {
+                case 0: DetailHeaderView(headers: selectedRequest.responseHeadersArray)
+                case 1: DetailJsonView(dataResponse: selectedRequest.dataResponse)
+                default:
+                    Text("Empty")
+                }
             }
             Spacer()
         }
