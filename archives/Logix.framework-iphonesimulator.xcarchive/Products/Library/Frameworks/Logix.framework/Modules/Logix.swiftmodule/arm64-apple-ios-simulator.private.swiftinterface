@@ -1,0 +1,102 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Logix
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
+import Foundation
+@_exported import Logix
+import Network
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CustomHTTPProtocol : Foundation.URLProtocol {
+  @objc override dynamic public class func canInit(with request: Foundation.URLRequest) -> Swift.Bool
+  @objc override dynamic public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
+  @objc override dynamic public func startLoading()
+  @objc override dynamic public func stopLoading()
+  @objc deinit
+}
+extension Logix.CustomHTTPProtocol : Foundation.URLSessionDataDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: (any Swift.Error)?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
+}
+@objc @_inheritsConvenienceInitializers public class Logix : ObjectiveC.NSObject {
+  @available(*, deprecated, renamed: "ignoredHosts")
+  @objc public static var blacklistedHosts: [Swift.String] {
+    @objc get
+    @objc set
+  }
+  @objc public static var ignoredHosts: [Swift.String] {
+    @objc get
+    @objc set
+  }
+  @objc public static var limit: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public static var defaultFilter: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public static var isEnable: Swift.Bool
+  @objc public static func swiftyLoad()
+  @objc public static func swiftyInitialize()
+  @objc public static func saveEvents(name: Swift.String?, parameters: [Swift.String : Any]?)
+  @objc public static func enable(_ enable: Swift.Bool)
+  @objc public static func enable(_ enable: Swift.Bool, sessionConfiguration: Foundation.URLSessionConfiguration)
+  @objc public static var logixFlow: UIKit.UIViewController? {
+    @objc get
+  }
+  @objc public static var shakeEnabled: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class Storage : ObjectiveC.NSObject {
+  public static let shared: Logix.Storage
+  public static var limit: Foundation.NSNumber?
+  public static var defaultFilter: Swift.String?
+  open var requests: [Logix.RequestModel]
+  open var analitics: [Logix.AnalyticsModel]
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func motionBegan(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
+}
+@_hasMissingDesignatedInitializers open class RequestModel : Swift.Codable {
+  final public let id: Swift.String
+  final public let url: Swift.String
+  final public let host: Swift.String?
+  final public let port: Swift.Int?
+  final public let scheme: Swift.String?
+  final public let date: Foundation.Date
+  final public let method: Swift.String
+  final public let headers: [Swift.String : Swift.String]
+  public var credentials: [Swift.String : Swift.String]
+  public var cookies: Swift.String?
+  open var httpBody: Foundation.Data?
+  open var code: Swift.Int
+  open var responseHeaders: [Swift.String : Swift.String]?
+  open var dataResponse: Foundation.Data?
+  open var errorClientDescription: Swift.String?
+  open var duration: Swift.Double?
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers open class AnalyticsModel {
+  final public let date: Foundation.Date
+  public var name: Swift.String?
+  public var parameters: [Swift.String : Any]?
+  @objc deinit
+}

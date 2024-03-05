@@ -1,0 +1,11 @@
+framework module Logix {
+    umbrella header "Logix.h"
+    
+    export *
+    module * { export * }
+}
+
+module Logix.Swift {
+  header "Logix-Swift.h"
+  requires objc
+}
