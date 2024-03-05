@@ -7,18 +7,23 @@
 //
 
 import SwiftUI
-import JSONViewer
+//import JSONViewer
 
 struct DetailJsonView: View {
     var dataResponse: Data?
     
     var body: some View {
+//        if let httpBodyData = dataResponse,
+//           let httpBody = String(data: httpBodyData, encoding: .utf8),
+//           let rootNode: JSONNode = httpBody.jsonNode() {
+//            
+//            JSONViewer(rootNode: rootNode)
+//        }
         if let httpBodyData = dataResponse,
-           let httpBody = String(data: httpBodyData, encoding: .utf8),
-           let rootNode: JSONNode = httpBody.jsonNode() {
-            
-            JSONViewer(rootNode: rootNode)
+           let httpBody = String(data: httpBodyData, encoding: .utf8) {
+            Text(httpBody)
         }
+
     }
 }
 

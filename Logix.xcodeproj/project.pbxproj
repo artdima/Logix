@@ -51,7 +51,6 @@
 		32F0CDE62B945BD600264A5D /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDDA2B945A9D00264A5D /* Logs.swift */; };
 		32F0CDF02B94B31400264A5D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDEF2B94B31400264A5D /* Storage.swift */; };
 		32F0CDF22B94B39C00264A5D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDF12B94B39C00264A5D /* Config.swift */; };
-		32F0CDF52B95A7A400264A5D /* JSONViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 32F0CDF42B95A7A400264A5D /* JSONViewer */; };
 		32F0CDF92B96183E00264A5D /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDF82B96183E00264A5D /* ApplicationView.swift */; };
 		32F0CDFB2B96214C00264A5D /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDFA2B96214C00264A5D /* PhoneView.swift */; };
 		32F0CDFE2B96570E00264A5D /* HeaderMenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0CDFD2B96570E00264A5D /* HeaderMenuDetailView.swift */; };
@@ -244,7 +243,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F0CDF52B95A7A400264A5D /* JSONViewer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +643,6 @@
 			);
 			name = LogixPro;
 			packageProductDependencies = (
-				32F0CDF42B95A7A400264A5D /* JSONViewer */,
 			);
 			productName = LogixPro;
 			productReference = 320CC2B22B91A50A009F8735 /* LogixPro.app */;
@@ -703,7 +700,6 @@
 			);
 			mainGroup = 52D6D9721BEFF229002C0205;
 			packageReferences = (
-				32F0CDF32B95A7A400264A5D /* XCRemoteSwiftPackageReference "JSONViewer" */,
 			);
 			productRefGroup = 52D6D97D1BEFF229002C0205 /* Products */;
 			projectDirPath = "";
@@ -1302,25 +1298,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		32F0CDF32B95A7A400264A5D /* XCRemoteSwiftPackageReference "JSONViewer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/varkrishna/JSONViewer";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		32F0CDF42B95A7A400264A5D /* JSONViewer */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 32F0CDF32B95A7A400264A5D /* XCRemoteSwiftPackageReference "JSONViewer" */;
-			productName = JSONViewer;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52D6D9731BEFF229002C0205 /* Project object */;
 }
